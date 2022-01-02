@@ -1,5 +1,5 @@
 import {CityType} from "../02/02_02";
-import {demolishHousesOnTheStreet} from "./04_2";
+import {demolishHousesOnTheStreet, getBuldingsWithsStaffCountGreaterThen} from "./04_2";
 
 let city: CityType;
 
@@ -40,3 +40,12 @@ beforeEach(() => {
      expect(city.houses.length).toBe(1);
      expect(city.houses[0].id).toBe(1)
  })
+
+// 01. создайте в том же файле еще одну функцию, что бы тесты прошли
+test("buildings with correct staff count", () => {
+    let buildings = getBuldingsWithsStaffCountGreaterThen (city.governmentBuildings, 500)
+
+    expect(buildings.length).toBe(1)
+    expect(buildings[0].type).toBe("FIRE-STATION")
+
+})
