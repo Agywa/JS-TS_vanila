@@ -9,6 +9,7 @@ import {messages} from "./05/05_01";
 import {User} from "./06/06_calback";
 import {ManComponent} from "./07-destructuring-assigment/destrructuring";
 
+
 const sentense = "Hello my friend!"
 const result = splitInterWords(sentense)
 console.log(result[0] === "hello")
@@ -24,6 +25,7 @@ ReactDOM.render(
   <React.StrictMode>
 
       <User/>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
