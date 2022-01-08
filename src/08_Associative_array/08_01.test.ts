@@ -17,8 +17,8 @@ beforeEach(() => {
 
 
 test("should select corresponding user from obj", () => {
-    users["1"].name = "Ekaterina"
+    delete users[1]
 
- expect(users["1"].name).toBe("Ekaterina")
+ expect(users["1"]).toBeUndefined()
 
 })
