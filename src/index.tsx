@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {splitInterWords} from "./01-hello-tests/01";
 import {sum} from "./03/03";
 import {messages} from "./05/05_01";
+import {User} from "./06/06_calback";
 
 const sentense = "Hello my friend!"
 const result = splitInterWords(sentense)
@@ -18,7 +19,8 @@ let  a = sum;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+
+      <User/>
   </React.StrictMode>,
   document.getElementById('root')
 );
